@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+// 서버타서 템플릿이 되면 아래 p 태그 안 템플릿이 실행됨
+<p th:text="'this is the parameter -> ' + ${name}">"template 엔진 동작 안할때 마크업내용임" 동작하면 왼쪽의 th 가 실행된다</p>
+</body>
+</html>

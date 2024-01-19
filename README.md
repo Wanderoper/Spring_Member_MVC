@@ -1,7 +1,7 @@
 # Spring활용 회원관리 MVC
 
 ## 프로젝트 소개 
-간단한 회원관리 Service를 적용하여 MVC를 이해하고 템플릿을 활용하기 위한 프로젝트 입니다.
+간단한 회원관리를 구현하여 MVC를 적용하고 템플릿화하여 활용하기 위한 프로젝트 입니다.
 
 의존관계 : Controller -> Service -> Repository
 

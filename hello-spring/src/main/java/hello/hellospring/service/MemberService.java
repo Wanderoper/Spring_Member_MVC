@@ -13,12 +13,12 @@ import java.util.Optional;
 
 // service를 만드려면 repository가 필요함
 
-@Service // 스프링 컨테이너에 MemberService를 등록해준다
+//@Service // 스프링 컨테이너에 MemberService를 등록해준다
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired // DI 주입시켜준다
+//    @Autowired // DI 주입시켜준다
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository; // 외부에서 memberRepository 넣어주기 -> 테스트작성 위함
     }

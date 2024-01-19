@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository // 스프링에 등록
+//@Repository // 스프링에 등록
 public class MemoryMemberRepository implements MemberRepository {
     // 저장을 하기 위해 List 를 이용한다
     private static Map<Long, Member> store = new HashMap<>(); // DB가 확정되지 않아서, 메모리에 저장하는 시나리오이다.

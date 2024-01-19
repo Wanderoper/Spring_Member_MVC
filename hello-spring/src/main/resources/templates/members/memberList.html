@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Member lists</title>
+</head>
+<body>
+
+<div class="conatiner">
+  <div>
+    <table>
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>이름</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="member : ${members}"> <!-- $ 으로 model의 value를 가져온다 loop 돌면서 가져옴 -->
+        <td th:text="${member.id}"></td> <!--getId로 가져옴-->
+        <td th:text="${member.name}"></td><!-- getName으로 가져옴-->
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>
